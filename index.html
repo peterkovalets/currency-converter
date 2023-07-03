@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button class="change-theme-btn" id="change-theme-btn">
+      <img id="theme-icon" src="images/moon.png" alt="Change theme icon" />
+    </button>
+    <main class="screen">
+      <div class="logo">
+        <img class="logo__img" src="images/logo.png" alt="Logo" />
+      </div>
+      <h1 class="title">CURRENCY CONVERTER</h1>
+      <form class="form" id="form">
+        <div class="form-group">
+          <label class="form-group__label" for="amount">Amount:</label>
+          <input class="form-group__input" type="number" id="amount" />
+        </div>
+
+        <div class="currencies">
+          <select class="select" name="from" id="from"></select>
+          <select class="select" name="to" id="to"></select>
+        </div>
+
+        <button type="submit" class="btn">Convert</button>
+      </form>
+
+      <div class="result hidden" id="result"></div>
+    </main>
+  </body>
+</html>
